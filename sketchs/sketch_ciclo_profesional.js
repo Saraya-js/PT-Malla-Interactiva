@@ -56,7 +56,9 @@ function constructObjects() {
         asig.printouts["Ciclo Formativo"].length > 0
         ? asig.printouts["Ciclo Formativo"].join(", ")
         : "No disponible";
-    if (ciclo.includes("Ciclo del Oficio")) {
+
+    // Aquí se setea que ciclo filtrar
+    if (ciclo.includes("Ciclo Profesional y de Magister")) {
       contador = contador + 1;
     } else {
       continue;
